@@ -16,19 +16,19 @@ public class InterfaceGraphique {
 
 	public static void pressKey() {
 		try {
-			StdDraw.picture(0, 0, "src\\ImageGame\\fond marin jeu java2.jpg", 6.3, 6.3);
+			StdDraw.picture(0, 0, "fond marin jeu java2.jpg", 6.3, 6.3);
 			DrawEnvironnement.draw(DrawEnvironnement.nbLevelIni1, DrawEnvironnement.nbLevelIni2,
 					DrawEnvironnement.nbLevelIni3, false);
 			if (2.7 < Caracters.getY1() && Caracters.getY1() < 3.07) {
-				StdDraw.picture(1, Caracters.getY1(), "src\\ImageGame\\plongeur.jpg", 0.2, 0.37 - 0.01);
+				StdDraw.picture(1, Caracters.getY1(), "plongeur.jpg", 0.2, 0.37 - 0.01);
 			} else if (0.7 < Caracters.getY1() && Caracters.getY1() < 2.7) {
-				StdDraw.picture(1, Caracters.getY1(), "src\\ImageGame\\plongeur.jpg", 0.2,
+				StdDraw.picture(1, Caracters.getY1(), "plongeur.jpg", 0.2,
 						DrawEnvironnement.tailleNiv1 - 0.01);
 			} else if (-1.3 < Caracters.getY1() && Caracters.getY1() < 0.7) {
-				StdDraw.picture(1, Caracters.getY1(), "src\\ImageGame\\plongeur.jpg", 0.2,
+				StdDraw.picture(1, Caracters.getY1(), "plongeur.jpg", 0.2,
 						DrawEnvironnement.tailleNiv2 - 0.01);
 			} else if (-3 < Caracters.getY1() && Caracters.getY1() < -1.3) {
-				StdDraw.picture(1, Caracters.getY1(), "src\\ImageGame\\plongeur.jpg", 0.2,
+				StdDraw.picture(1, Caracters.getY1(), "plongeur.jpg", 0.2,
 						DrawEnvironnement.tailleNiv3 - 0.01);
 			}
 			
@@ -58,19 +58,19 @@ public class InterfaceGraphique {
 
 	public static void pressKey1() {
 		try {
-			StdDraw.picture(0, 0, "src\\ImageGame\\fond marin jeu java2.jpg", 6.3, 6.3);
+			StdDraw.picture(0, 0, "fond marin jeu java2.jpg", 6.3, 6.3);
 			DrawEnvironnement.draw(DrawEnvironnement.nbLevelIni1, DrawEnvironnement.nbLevelIni2,
 					DrawEnvironnement.nbLevelIni3, false);
 			if (2.7 < Caracters.getY() && Caracters.getY() < 3.07) {
-				StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2, 0.37 - 0.01);
+				StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2, 0.37 - 0.01);
 			} else if (0.7 < Caracters.getY() && Caracters.getY() < 2.7) {
-				StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2,
+				StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2,
 						DrawEnvironnement.tailleNiv1 - 0.01);
 			} else if (-1.3 < Caracters.getY() && Caracters.getY() < 0.7) {
-				StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2,
+				StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2,
 						DrawEnvironnement.tailleNiv2 - 0.01);
 			} else if (-3 < Caracters.getY() && Caracters.getY() < -1.3) {
-				StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2,
+				StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2,
 						DrawEnvironnement.tailleNiv3 - 0.01);
 			}
 			System.out.println("player 2 GO!");
@@ -152,19 +152,19 @@ public class InterfaceGraphique {
 
 	public static void IA() {
 		try {
-			StdDraw.picture(0, 0, "src\\ImageGame\\fond marin jeu java2.jpg", 6.3, 6.3);
+			StdDraw.picture(0, 0, "fond marin jeu java2.jpg", 6.3, 6.3);
 			DrawEnvironnement.draw(DrawEnvironnement.nbLevelIni1, DrawEnvironnement.nbLevelIni2,
 					DrawEnvironnement.nbLevelIni3, false);
 			if (2.7 < Caracters.getY() && Caracters.getY() < 3.07) {
-				StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2, 0.37 - 0.01);
+				StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2, 0.37 - 0.01);
 			} else if (0.7 < Caracters.getY() && Caracters.getY() < 2.7) {
-				StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2,
+				StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2,
 						DrawEnvironnement.tailleNiv1 - 0.01);
 			} else if (-1.3 < Caracters.getY() && Caracters.getY() < 0.7) {
-				StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2,
+				StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2,
 						DrawEnvironnement.tailleNiv2 - 0.01);
 			} else if (-3 < Caracters.getY() && Caracters.getY() < -1.3) {
-				StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2,
+				StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2,
 						DrawEnvironnement.tailleNiv3 - 0.01);
 			}
 			

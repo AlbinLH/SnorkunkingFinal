@@ -20,7 +20,7 @@ public class MenuJeu {
 		StdDraw.setCanvasSize(680, 700);
 		StdDraw.setXscale(-3 - InterfaceGraphique.WIDTH, InterfaceGraphique.X_MAX + InterfaceGraphique.WIDTH);
 		StdDraw.setYscale(-3 - InterfaceGraphique.WIDTH, InterfaceGraphique.X_MAX + InterfaceGraphique.WIDTH);
-		StdDraw.picture(0, 0, "src\\P5210976.jpg", 6.3, 6.3);
+		StdDraw.picture(0, 0, "P5210976.jpg", 6.3, 6.3);
 		StdDraw.setPenColor(StdDraw.BOOK_BLUE);
 		StdDraw.filledRectangle(0.1, 0.35, 2 * (1 + 0.05f), 2 * 0.185);
 		StdDraw.filledRectangle(0.1, -1.10, 2 * (1 + 0.05f), 2 * 0.185);

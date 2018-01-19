@@ -32,13 +32,13 @@ public class DrawEnvironnement {
 
 		if (changePhase) {
 			StdDraw.picture(0, 0,
-					"src\\ImageGame\\fond marin jeu java2.jpg", 6.3,
+					"fond marin jeu java2.jpg", 6.3,
 					6.3);
-			StdDraw.picture(0, 2.885, "src\\ImageGame\\sable.jpg",
+			StdDraw.picture(0, 2.885, "sable.jpg",
 					2 * (2.9 + 0.09f), 2 * 0.185);
-			StdDraw.picture(-1, 2.885, "src\\ImageGame\\plongeur.jpg",
+			StdDraw.picture(-1, 2.885, "plongeur.jpg",
 					0.2, 0.37 - 0.01);
-			StdDraw.picture(1, 2.885, "src\\ImageGame\\plongeur.jpg",
+			StdDraw.picture(1, 2.885, "plongeur.jpg",
 					0.2, 0.37 - 0.01);
 			CompteurJoueur.coffreHand1 = 0;
 			CompteurJoueur.coffreHand2 = 0;
@@ -62,12 +62,12 @@ public class DrawEnvironnement {
 
 	
 		StdDraw.rectangle(0, 2.885, 2.9 + 0.09f, 0.185);
-		StdDraw.picture(0, 2.885, "src\\ImageGame\\sable.jpg",
+		StdDraw.picture(0, 2.885, "sable.jpg",
 				2 * (2.9 + 0.09f), 2 * 0.185);
 		while (once) {
-			StdDraw.picture(-1, 2.885, "src\\ImageGame\\plongeur.jpg",
+			StdDraw.picture(-1, 2.885, "plongeur.jpg",
 					0.2, 0.37 - 0.01);
-			StdDraw.picture(1, 2.885, "src\\ImageGame\\plongeur.jpg",
+			StdDraw.picture(1, 2.885, "plongeur.jpg",
 					0.2, 0.37 - 0.01);
 			once = false;
 		}
@@ -93,14 +93,14 @@ public class DrawEnvironnement {
 				StdDraw.rectangle(0, positionLevel, 2.9 + 0.09f, tailleLevel / 2);
 				if (changePhase) {
 					StdDraw.picture(0, positionLevel,
-							"src\\ImageGame\\coffre pirate2.jpg", 0.2,
+							"coffre pirate2.jpg", 0.2,
 							tailleLevel - 0.01);
 				
 					positionY1ini[i - 1] = positionLevel;
 				} else {
 					if (Listes.contient(positionY1ini, positionLevel)) {
 						StdDraw.picture(0, positionLevel,
-								"src\\ImageGame\\coffre pirate2.jpg",
+								"coffre pirate2.jpg",
 								0.2, tailleLevel - 0.01);
 
 					} else {
@@ -129,13 +129,13 @@ public class DrawEnvironnement {
 				StdDraw.rectangle(0, positionLevel, 2.9 + 0.09f, tailleLevel / 2);
 				if (changePhase) {
 					StdDraw.picture(0, positionLevel,
-							"src\\ImageGame\\coffre pirate2.jpg", 0.2,
+							"coffre pirate2.jpg", 0.2,
 							tailleLevel - 0.01);
 					positionY2ini[i - 1] = positionLevel;
 				} else {
 					if (Listes.contient(positionY2ini, positionLevel)) {
 						StdDraw.picture(0, positionLevel,
-								"src\\ImageGame\\coffre pirate2.jpg",
+								"coffre pirate2.jpg",
 								0.2, tailleLevel - 0.01);
 
 					} else {
@@ -163,13 +163,13 @@ public class DrawEnvironnement {
 				StdDraw.rectangle(0, positionLevel, 2.9 + 0.09f, tailleLevel / 2);
 				if (changePhase) {
 					StdDraw.picture(0, positionLevel,
-							"src\\ImageGame\\coffre pirate2.jpg", 0.2,
+							"coffre pirate2.jpg", 0.2,
 							tailleLevel - 0.01);
 					positionY3ini[i - 1] = positionLevel;
 				} else {
 					if (Listes.contient(positionY3ini, positionLevel)) {
 						StdDraw.picture(0, positionLevel,
-								"src\\ImageGame\\coffre pirate2.jpg",
+								"coffre pirate2.jpg",
 								0.2, tailleLevel - 0.01);
 
 					} else {
@@ -190,11 +190,11 @@ public class DrawEnvironnement {
 
 		StdDraw.filledRectangle(-2.8 - 0.09f + (1 - 0.09f) / 2, 0, (1.5 - 0.09f) / 2, 2.99 + 0.09f);
 		StdDraw.picture(-2.8 - 0.09f + (1 - 0.09f) / 2, 0,
-				"src\\ImageGame\\sable3.jpg", (1.5 - 0.09f),
+				"sable3.jpg", (1.5 - 0.09f),
 				2 * (2.99 + 0.09f));
 		StdDraw.filledRectangle(2.8 + 0.09f - (1 - 0.09f) / 2, 0, (1.5 - 0.09f) / 2, 2.99 + 0.09f);
 		StdDraw.picture(2.8 + 0.09f - (1 - 0.09f) / 2, 0,
-				"src\\ImageGame\\sable3.jpg", (1.5 - 0.09f),
+				"sable3.jpg", (1.5 - 0.09f),
 				2 * (2.99 + 0.09f));
 		CompteurJoueur.Compt(0, 0);
 	}

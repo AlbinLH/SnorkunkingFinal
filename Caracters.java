@@ -30,64 +30,50 @@ public class Caracters {
 		switch (keyPressed) {
 		case 0:
 			if (2.7 < y && y < 3.07) {
-				if (DrawEnvironnement.tailleNiv1 == 2) {
-					y = y - 0.185 - DrawEnvironnement.tailleNiv1 - DrawEnvironnement.tailleNiv2 / 2;
-					StdDraw.picture(-1, y,
-							"src\\ImageGame\\plongeur.jpg", 0.2,
-							DrawEnvironnement.tailleNiv2 - 0.01);
-					StdDraw.show(20);
-				} else {
+				
 					y = y - 0.185 - DrawEnvironnement.tailleNiv1 / 2;
 					StdDraw.picture(-1, y,
-							"src\\ImageGame\\plongeur.jpg", 0.2,
+							"plongeur.jpg", 0.2,
 							DrawEnvironnement.tailleNiv1 - 0.01);
+
 					StdDraw.show(20);
-				}
+				
+
 			} else if (0.7 < y && y < 2.7) {
 				if (0.7 < y - DrawEnvironnement.tailleNiv1 && y - DrawEnvironnement.tailleNiv1 < 2.7) {
 					y = y - DrawEnvironnement.tailleNiv1;
-					StdDraw.picture(-1, y, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv1 - 0.01);
+					StdDraw.picture(-1, y, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv1 - 0.01);
 
 					StdDraw.show(20);
 
 				} else {
-					if (DrawEnvironnement.tailleNiv2 == 2) {
-						y = y - DrawEnvironnement.tailleNiv1 / 2 - DrawEnvironnement.tailleNiv2
-								- DrawEnvironnement.tailleNiv3 / 2;
-						StdDraw.picture(-1, y,
-								"src\\ImageGame\\plongeur.jpg", 0.2,
-								DrawEnvironnement.tailleNiv3 - 0.01);
-						StdDraw.show(20);
-					} else {
+					
 						y = y - DrawEnvironnement.tailleNiv1 / 2 - DrawEnvironnement.tailleNiv2 / 2;
 						StdDraw.picture(-1, y,
-								"src\\ImageGame\\plongeur.jpg", 0.2,
+								"plongeur.jpg", 0.2,
 								DrawEnvironnement.tailleNiv2 - 0.01);
 
 						StdDraw.show(20);
-					}
+
+					
 				}
 			} else if (-1.3 < y && y < 0.7) {
 				if (-1.3 < y - DrawEnvironnement.tailleNiv2 && y - DrawEnvironnement.tailleNiv2 < 0.7) {
 					y = y - DrawEnvironnement.tailleNiv2;
-					StdDraw.picture(-1, y, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv2 - 0.01);
+					StdDraw.picture(-1, y, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv2 - 0.01);
 					StdDraw.show(20);
 
 				} else {
-					if (DrawEnvironnement.tailleNiv3 == 1.7) {
-						InterfaceGraphique.pressKey();
-					} else {
 						y = y - DrawEnvironnement.tailleNiv2 / 2 - DrawEnvironnement.tailleNiv3 / 2;
 						StdDraw.picture(-1, y,
-								"src\\ImageGame\\plongeur.jpg", 0.2,
+								"plongeur.jpg", 0.2,
 								DrawEnvironnement.tailleNiv3 - 0.01);
 						StdDraw.show(20);
-					}
 				}
 			} else if (-3 < y && y < -1.3) {
 				if (-3 < y - DrawEnvironnement.tailleNiv3 && y - DrawEnvironnement.tailleNiv3 < -1.3) {
 					y = y - DrawEnvironnement.tailleNiv3;
-					StdDraw.picture(-1, y, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv3 - 0.01);
+					StdDraw.picture(-1, y, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv3 - 0.01);
 
 					StdDraw.show(20);
 
@@ -108,13 +94,13 @@ public class Caracters {
 			} else if (0.7 < y && y < 2.7) {
 				if (0.7 < y + DrawEnvironnement.tailleNiv1 && y + DrawEnvironnement.tailleNiv1 < 2.7) {
 					y = y + DrawEnvironnement.tailleNiv1;
-					StdDraw.picture(-1, y, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv1 - 0.01);
+					StdDraw.picture(-1, y, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv1 - 0.01);
 
 					StdDraw.show(20);
 
 				} else {
 					y = y + DrawEnvironnement.tailleNiv1 / 2 + 0.185;
-					StdDraw.picture(-1, y, "src\\ImageGame\\plongeur.jpg", 0.2, 0.37 - 0.01);
+					StdDraw.picture(-1, y, "plongeur.jpg", 0.2, 0.37 - 0.01);
 
 					StdDraw.show(20);
 					CompteurJoueur.Compt(CompteurJoueur.coffreHand1, CompteurJoueur.coffreHand2);
@@ -125,51 +111,40 @@ public class Caracters {
 			} else if (-1.3 < y && y < 0.7) {
 				if (-1.3 < y + DrawEnvironnement.tailleNiv2 && y + DrawEnvironnement.tailleNiv2 < 0.7) {
 					y = y + DrawEnvironnement.tailleNiv2;
-					StdDraw.picture(-1, y, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv2 - 0.01);
+					StdDraw.picture(-1, y, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv2 - 0.01);
 
 					StdDraw.show(20);
 
 				} else {
-
-					if (DrawEnvironnement.tailleNiv1 == 2) {
-						y = y + 0.185 + DrawEnvironnement.tailleNiv1 + DrawEnvironnement.tailleNiv2 / 2;
-						StdDraw.picture(-1, y,
-								"src\\ImageGame\\plongeur.jpg", 0.2,
-								0.37 - 0.01);
-						StdDraw.show(20);
-						CompteurJoueur.Compt(CompteurJoueur.coffreHand1, CompteurJoueur.coffreHand2);
-						valeurTresorSauvés1 = valeurTresorSauvés1 + valeurTresorEnMain1;
-						valeurTresorEnMain1 = 0;
-					} else {
+					
 						y = y + DrawEnvironnement.tailleNiv2 / 2 + DrawEnvironnement.tailleNiv1 / 2;
 						StdDraw.picture(-1, y,
-								"src\\ImageGame\\plongeur.jpg", 0.2,
+								"plongeur.jpg", 0.2,
 								DrawEnvironnement.tailleNiv1 - 0.01);
+
 						StdDraw.show(20);
-					}
+
+					
 				}
 			} else if (-3 < y && y < -1.3) {
 				if (-3 < y + DrawEnvironnement.tailleNiv3 && y + DrawEnvironnement.tailleNiv3 < -1.3) {
 					y = y + DrawEnvironnement.tailleNiv3;
-					StdDraw.picture(-1, y, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv3 - 0.01);
+					StdDraw.picture(-1, y, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv3 - 0.01);
 
 					StdDraw.show(20);
 
 				} else {
-
-					if (DrawEnvironnement.tailleNiv2 == 2) {
-						y = y + DrawEnvironnement.tailleNiv1 / 2 + DrawEnvironnement.tailleNiv2
-								+ DrawEnvironnement.tailleNiv3 / 2;
-						StdDraw.picture(-1, y, "src\\ImageGame\\plongeur.jpg", 0.2,
-								DrawEnvironnement.tailleNiv1 - 0.01);
-						StdDraw.show(20);
-					} else {
+				
 						y = y + DrawEnvironnement.tailleNiv3 / 2 + DrawEnvironnement.tailleNiv2 / 2;
-						StdDraw.picture(-1, y, "src\\ImageGame\\plongeur.jpg", 0.2,
+						StdDraw.picture(-1, y,
+								"plongeur.jpg", 0.2,
 								DrawEnvironnement.tailleNiv2 - 0.01);
+
 						StdDraw.show(20);
-					}
+
+					
 				}
+				
 			}
 			Oxygene.diminutionOxygene(CompteurJoueur.coffreHand1);
 			statusJoueur1 -= 1;
@@ -251,15 +226,15 @@ public class Caracters {
 
 				}
 				if (2.7 < Caracters.getY() && Caracters.getY() < 3.07) {
-					StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2, 0.37 - 0.01);
+					StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2, 0.37 - 0.01);
 				} else if (0.7 < Caracters.getY() && Caracters.getY() < 2.7) {
-					StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2,
+					StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2,
 							DrawEnvironnement.tailleNiv1 - 0.01);
 				} else if (-1.3 < Caracters.getY() && Caracters.getY() < 0.7) {
-					StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2,
+					StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2,
 							DrawEnvironnement.tailleNiv2 - 0.01);
 				} else if (-3 < Caracters.getY() && Caracters.getY() < -1.3) {
-					StdDraw.picture(-1, Caracters.getY(), "src\\ImageGame\\plongeur.jpg", 0.2,
+					StdDraw.picture(-1, Caracters.getY(), "plongeur.jpg", 0.2,
 							DrawEnvironnement.tailleNiv3 - 0.01);
 				}
 				StdDraw.show(20);
@@ -272,79 +247,50 @@ public class Caracters {
 
 		case 3:
 			if (2.7 < y1 && y1 < 3.07) {
-				if (DrawEnvironnement.tailleNiv1 == 2) {
-					y1 = y1 - 0.185 - DrawEnvironnement.tailleNiv1 - DrawEnvironnement.tailleNiv2 / 2;
-					StdDraw.picture(1, y1,
-							"src\\ImageGame\\plongeur.jpg", 0.2,
-							DrawEnvironnement.tailleNiv2 - 0.01);
-					StdDraw.show(20);
-				} else {
 					y1 = y1 - 0.185 - DrawEnvironnement.tailleNiv1 / 2;
 					StdDraw.picture(1, y1,
-							"src\\ImageGame\\plongeur.jpg", 0.2,
+							"plongeur.jpg", 0.2,
 							DrawEnvironnement.tailleNiv1 - 0.01);
 
 					StdDraw.show(20);
-
-				}
+				
 			} else if (0.7 < y1 && y1 < 2.7) {
 				if (0.7 < y1 - DrawEnvironnement.tailleNiv1 && y1 - DrawEnvironnement.tailleNiv1 < 2.7) {
 					y1 = y1 - DrawEnvironnement.tailleNiv1;
-					StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv1 - 0.01);
+					StdDraw.picture(1, y1, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv1 - 0.01);
 
 					StdDraw.show(20);
 
 				} else {
-
-					if (DrawEnvironnement.tailleNiv2 == 2) {
-						y1 = y1 - DrawEnvironnement.tailleNiv1 / 2 - DrawEnvironnement.tailleNiv2
-								- DrawEnvironnement.tailleNiv3 / 2;
-						StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2,
-								DrawEnvironnement.tailleNiv3 - 0.01);
-						StdDraw.show(20);
-					} else {
+					
 						y1 = y1 - DrawEnvironnement.tailleNiv1 / 2 - DrawEnvironnement.tailleNiv2 / 2;
-						StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2,
+						StdDraw.picture(1, y1,
+								"plongeur.jpg", 0.2,
 								DrawEnvironnement.tailleNiv2 - 0.01);
-
 						StdDraw.show(20);
-
 					}
-				}
-
+				
 			} else if (-1.3 < y1 && y1 < 0.7) {
 				if (-1.3 < y1 - DrawEnvironnement.tailleNiv2 && y1 - DrawEnvironnement.tailleNiv2 < 0.7) {
 					y1 = y1 - DrawEnvironnement.tailleNiv2;
-					StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv2 - 0.01);
+					StdDraw.picture(1, y1, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv2 - 0.01);
 					StdDraw.show(20);
 
 				} else {
-					y1 = y1 - DrawEnvironnement.tailleNiv2 / 2 - DrawEnvironnement.tailleNiv3 / 2;
-					StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv3 - 0.01);
+						y1 = y1 - DrawEnvironnement.tailleNiv2 / 2 - DrawEnvironnement.tailleNiv3 / 2;
+						StdDraw.picture(1, y1,
+								"plongeur.jpg", 0.2,
+								DrawEnvironnement.tailleNiv3 - 0.01);
 
-					StdDraw.show(20);
+						StdDraw.show(20);
 
-				}
-				if (DrawEnvironnement.tailleNiv3 == 1.7) {
-					if (MenuJeu.boolIA) {
-						InterfaceGraphique.IA();
-					} else {
-						InterfaceGraphique.pressKey1();
 					}
-				} else {
-					y1 = y1 - DrawEnvironnement.tailleNiv2 / 2 - DrawEnvironnement.tailleNiv3 / 2;
-					StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv3 - 0.01);
-
-					StdDraw.show(20);
-
-				}
-
+				
 			} else if (-3 < y1 && y1 < -1.3) {
 				if (-3 < y1 - DrawEnvironnement.tailleNiv3 && y1 - DrawEnvironnement.tailleNiv3 < -1.3) {
 					y1 = y1 - DrawEnvironnement.tailleNiv3;
-					StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv3 - 0.01);
+					StdDraw.picture(1, y1, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv3 - 0.01);
 					StdDraw.show(20);
-
 				} else {
 					if (MenuJeu.boolIA) {
 						InterfaceGraphique.IA();
@@ -369,12 +315,12 @@ public class Caracters {
 			} else if (0.7 < y1 && y1 < 2.7) {
 				if (0.7 < y1 + DrawEnvironnement.tailleNiv1 && y1 + DrawEnvironnement.tailleNiv1 < 2.7) {
 					y1 = y1 + DrawEnvironnement.tailleNiv1;
-					StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv1 - 0.01);
+					StdDraw.picture(1, y1, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv1 - 0.01);
 					StdDraw.show(20);
 
 				} else {
 					y1 = y1 + DrawEnvironnement.tailleNiv1 / 2 + 0.185;
-					StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2, 0.37 - 0.01);
+					StdDraw.picture(1, y1, "plongeur.jpg", 0.2, 0.37 - 0.01);
 
 					StdDraw.show(20);
 					CompteurJoueur.Compt(CompteurJoueur.coffreHand1, CompteurJoueur.coffreHand2);
@@ -385,53 +331,36 @@ public class Caracters {
 			} else if (-1.3 < y1 && y1 < 0.7) {
 				if (-1.3 < y1 + DrawEnvironnement.tailleNiv2 && y1 + DrawEnvironnement.tailleNiv2 < 0.7) {
 					y1 = y1 + DrawEnvironnement.tailleNiv2;
-					StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv2 - 0.01);
+					StdDraw.picture(1, y1, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv2 - 0.01);
 
 					StdDraw.show(20);
 
 				} else {
-
-					if (DrawEnvironnement.tailleNiv1 == 2) {
-						y1 = y1 + 0.185 + DrawEnvironnement.tailleNiv1 + DrawEnvironnement.tailleNiv2 / 2;
-						StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2, 0.37 - 0.01);
-						StdDraw.show(20);
-						CompteurJoueur.Compt(CompteurJoueur.coffreHand1, CompteurJoueur.coffreHand2);
-						valeurTresorSauvés2 = valeurTresorSauvés2 + valeurTresorEnMain2;
-						valeurTresorEnMain2 = 0;
-					} else {
+					
 						y1 = y1 + DrawEnvironnement.tailleNiv2 / 2 + DrawEnvironnement.tailleNiv1 / 2;
-						StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2,
+						StdDraw.picture(1, y1,
+								"plongeur.jpg", 0.2,
 								DrawEnvironnement.tailleNiv1 - 0.01);
 
 						StdDraw.show(20);
-
-					}
+					
 				}
 			} else if (-3 < y1 && y1 < -1.3) {
 				if (-3 < y1 + DrawEnvironnement.tailleNiv3 && y1 + DrawEnvironnement.tailleNiv3 < -1.3) {
 					y1 = y1 + DrawEnvironnement.tailleNiv3;
-					StdDraw.picture(1, y1, "src\\ImageGame\\plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv3 - 0.01);
+					StdDraw.picture(1, y1, "plongeur.jpg", 0.2, DrawEnvironnement.tailleNiv3 - 0.01);
 
 					StdDraw.show(20);
 
 				} else {
-					if (DrawEnvironnement.tailleNiv2 == 2) {
-						y1 = y1 + DrawEnvironnement.tailleNiv1 / 2 + DrawEnvironnement.tailleNiv2
-								+ DrawEnvironnement.tailleNiv3 / 2;
-						StdDraw.picture(1, y1,
-								"src\\ImageGame\\plongeur.jpg", 0.2,
-								DrawEnvironnement.tailleNiv1 - 0.01);
-						StdDraw.show(20);
-					} else {
+					
 						y1 = y1 + DrawEnvironnement.tailleNiv3 / 2 + DrawEnvironnement.tailleNiv2 / 2;
 						StdDraw.picture(1, y1,
-								"src\\ImageGame\\plongeur.jpg", 0.2,
+								"plongeur.jpg", 0.2,
 								DrawEnvironnement.tailleNiv2 - 0.01);
-						
 						StdDraw.show(20);
-						
 					}
-				}
+				
 			}
 			Oxygene.diminutionOxygene(CompteurJoueur.coffreHand2);
 			statusJoueur2 -= 1;
@@ -518,20 +447,20 @@ public class Caracters {
 
 				}
 				if (2.7 < Caracters.getY1() && Caracters.getY1() < 3.07) {
-					StdDraw.picture(1, Caracters.getY1(), "src\\ImageGame\\plongeur.jpg", 0.2, 0.37 - 0.01);
+					StdDraw.picture(1, Caracters.getY1(), "plongeur.jpg", 0.2, 0.37 - 0.01);
 				} else if (0.7 < Caracters.getY1() && Caracters.getY1() < 2.7) {
-					StdDraw.picture(1, Caracters.getY1(), "src\\ImageGame\\plongeur.jpg", 0.2,
+					StdDraw.picture(1, Caracters.getY1(), "plongeur.jpg", 0.2,
 							DrawEnvironnement.tailleNiv1 - 0.01);
 				} else if (-1.3 < Caracters.getY1() && Caracters.getY1() < 0.7) {
-					StdDraw.picture(1, Caracters.getY1(), "src\\ImageGame\\plongeur.jpg", 0.2,
+					StdDraw.picture(1, Caracters.getY1(), "plongeur.jpg", 0.2,
 							DrawEnvironnement.tailleNiv2 - 0.01);
 				} else if (-3 < Caracters.getY1() && Caracters.getY1() < -1.3) {
-					StdDraw.picture(1, Caracters.getY1(), "src\\ImageGame\\plongeur.jpg", 0.2,
+					StdDraw.picture(1, Caracters.getY1(), "plongeur.jpg", 0.2,
 							DrawEnvironnement.tailleNiv3 - 0.01);
 				}
 				DrawEnvironnement.statusTresor[statusJoueur2] = 0;
 				StdDraw.show(20);
-
+				
 			} else {
 				if (MenuJeu.boolIA) {
 					InterfaceGraphique.IA();

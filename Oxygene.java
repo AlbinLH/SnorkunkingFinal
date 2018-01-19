@@ -20,9 +20,9 @@ public class Oxygene {
 			DrawEnvironnement.positionY1ini = positionY1;
 			DrawEnvironnement.positionY2ini = positionY2;
 			DrawEnvironnement.positionY3ini = positionY3;
-			int[] tresorCave1 = new int[TableauxTresors.tresorsCave1ini.length - (int) Caracters.LevelUtilisé1];
-			int[] tresorCave2 = new int[TableauxTresors.tresorsCave2ini.length - (int) Caracters.LevelUtilisé2];
-			int[] tresorCave3 = new int[TableauxTresors.tresorsCave3ini.length - (int) Caracters.LevelUtilisé3];
+			int[] tresorCave1 = new int[TableauxTresors.tresorsCave1ini.length];
+			int[] tresorCave2 = new int[TableauxTresors.tresorsCave2ini.length];
+			int[] tresorCave3 = new int[TableauxTresors.tresorsCave3ini.length];
 			int j = 0;
 			int k = 0;
 			int l = 0;
@@ -70,7 +70,7 @@ public class Oxygene {
 			int style = Font.BOLD | Font.ITALIC;
 			Font police = new Font("Serif", style, 40);
 			StdDraw.setFont(police);
-			StdDraw.picture(0, 0, "src\\ImageGame\\Bulles.jpg", 6.3, 6.3);
+			StdDraw.picture(0, 0, "Bulles.jpg", 6.3, 6.3);
 			StdDraw.setPenColor(StdDraw.RED);
 			StdDraw.text(-1.5, 1.5, "fin de la phase:");
 			StdDraw.text(0, 1.5, Double.toString(Oxygene.phase));
@@ -96,15 +96,15 @@ public class Oxygene {
 			Caracters.LevelUtilisé3 = 0;
 			Caracters.statusJoueur2 = -1;
 			Caracters.statusJoueur1 = -1;
-			StdDraw.picture(-1, 2.885, "src\\ImageGame\\plongeur.jpg", 0.2, 0.37 - 0.01);
-			StdDraw.picture(1, 2.885, "src\\ImageGame\\plongeur.jpg", 0.2, 0.37 - 0.01);
+			StdDraw.picture(-1, 2.885, "plongeur.jpg", 0.2, 0.37 - 0.01);
+			StdDraw.picture(1, 2.885, "plongeur.jpg", 0.2, 0.37 - 0.01);
 			StdDraw.show(20);
 
 		} else if (oxygene <= 0 && end) {
 			int style = Font.BOLD | Font.ITALIC;
 			Font police = new Font("Serif", style, 40);
 			StdDraw.setFont(police);
-			StdDraw.picture(0, 0, "src\\ImageGame\\Bulles.jpg", 6.3, 6.3);
+			StdDraw.picture(0, 0, "Bulles.jpg", 6.3, 6.3);
 			if (Caracters.valeurTresorSauvés1 < Caracters.valeurTresorSauvés2) {
 				StdDraw.setPenColor(StdDraw.RED);
 				StdDraw.text(0, 1, "Le joueur 2 gagne !");
